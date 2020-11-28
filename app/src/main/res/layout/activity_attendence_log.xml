@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AttendenceLog_Activity">
+    <TextView
+        android:id="@+id/hrm_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#2A98F0"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="5dp"
+        android:text="Attendance Log"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#F8F3F3"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E2DFDF"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="175dp"
+            android:layout_height="47dp"
+            android:background="@drawable/border"
+            android:layout_marginRight="5dp"
+            android:layout_margin="5dp"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/fromDate_Alog"
+            android:layout_width="170dp"
+            android:layout_height="47dp"
+            android:layout_toRightOf="@+id/search"
+            android:clickable="true"
+            android:fontFamily="cursive"
+            android:hint="End / To Date"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp" />
+
+<!--        <androidx.appcompat.widget.AppCompatImageButton-->
+<!--            android:id="@+id/searchDate_btn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_toRightOf="@+id/fromDate_Alog"-->
+<!--            android:backgroundTint="#BDAFAF"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:src="@drawable/searchicon"-->
+<!--            />-->
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/sky"
+        android:layout_height="0.5dp"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/attendenceLog_listView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="#E6E9EB"
+        android:dividerHeight="1dp"
+        android:listSelector="#D3D3D3"
+        android:background="@android:color/white"/>
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/attendenceRecyclerView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

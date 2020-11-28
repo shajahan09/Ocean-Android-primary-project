@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyTeamsAttendence_Activity">
+    <TextView
+        android:id="@+id/hrm_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#2A98F0"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="2dp"
+        android:text="My Team's Attendence"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#F8F3F3"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DDD9D9"
+        android:background="@drawable/border"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:id="@+id/searchTeams"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_marginRight="5dp"
+            android:layout_margin="5dp"
+            android:clickable="true" />
+        <TextView
+            android:id="@+id/toDate_teams"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_toRightOf="@+id/searchTeams"
+            android:clickable="true"
+            android:fontFamily="cursive"
+            android:hint="End / To Date"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/sky"
+        android:layout_height="0.5dp"/>
+
+
+
+<!--    <ListView-->
+<!--        android:id="@+id/myTeams_Attendence_listView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:divider="#E6E9EB"-->
+<!--        android:dividerHeight="10dp"-->
+<!--        android:listSelector="#F1CDCD"-->
+<!--        />-->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>

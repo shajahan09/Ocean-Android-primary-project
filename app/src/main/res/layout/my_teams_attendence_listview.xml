@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="2dp"
+    app:cardCornerRadius="4dp">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/relative_lyout"-->
+<!--        android:layout_margin="4dp">-->
+
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/text_view2"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_below="@+id/text_view1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="Line 2"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="15sp" />&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/f_name_texts"-->
+<!--            android:fontFamily="sans-serif-condensed-light"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Medium Text"-->
+<!--            android:layout_marginTop="0.5dp"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:textColor="#4d4d4d"-->
+<!--            />-->
+
+<!--        <TextView-->
+
+<!--            android:id="@+id/l_name_texts"-->
+<!--            android:fontFamily="sans-serif-condensed-light"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Medium Text"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="0.5dp"-->
+<!--            android:textColor="#4d4d4d"-->
+<!--            android:layout_toRightOf="@+id/f_name_texts"-->
+
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/person_no_texts"-->
+<!--            android:fontFamily="sans-serif-condensed-light"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Medium Text"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="0.5dp"-->
+<!--            android:textColor="#4d4d4d"-->
+<!--            android:layout_toRightOf="@+id/l_name_texts"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/desig_name_texts"-->
+<!--            android:fontFamily="sans-serif-condensed-light"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Medium Text"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textAppearance="?android:attr/textAppearanceMedium"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:textColor="#4d4d4d"-->
+<!--            android:layout_below="@+id/person_no_texts"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/dept_name_texts"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:fontFamily="sans-serif-condensed-light"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Medium Text"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:textColor="#4d4d4d"-->
+<!--            android:layout_toRightOf="@+id/desig_name_texts"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/phone_mobile_texts"-->
+<!--            android:fontFamily="sans-serif-condensed-light"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Medium Text"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:textColor="#4d4d4d"-->
+<!--            android:layout_below="@+id/dept_name_texts"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/email_office_texts"-->
+<!--            android:fontFamily="sans-serif-condensed-light"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:text="Medium Text"-->
+<!--            android:textSize="15sp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:textColor="#4d4d4d"-->
+<!--            android:layout_toRightOf="@+id/phone_mobile_texts"-->
+
+<!--            />-->
+
+<!--    </RelativeLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/empId_team"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Medium Text"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/blue"
+            />
+        <TextView
+            android:id="@+id/personName_team"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="wrap_content"
+            android:textColor="@color/blue"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Medium"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/designation_team"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Medium Text"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="10dp"
+            android:textColor="#1189E7"
+            />
+        <TextView
+            android:id="@+id/department_team"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Medium Text"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0.5dp"
+            android:textColor="#1189E7"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In : "
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#4d4d4d"/>
+
+        <TextView
+            android:id="@+id/login_team"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" "
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="20dp"
+            android:textColor="#4d4d4d"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lateLogin_team"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#D64747"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Out : "
+            android:layout_marginLeft="10dp"
+            android:textColor="#4d4d4d"/>
+
+        <TextView
+            android:id="@+id/Logout_team"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=" "
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="#4d4d4d"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/earlyLogOut_team"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:textSize="12sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#D64747"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/absentReason_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Medium Text"
+                android:textColor="#D64747"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
